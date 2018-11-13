@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testarossa</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav>
+<!--      <div class="navnav">-->
+      <h1>SPACE LUV</h1>
+      <ul>
+        <li class="navvmenu"><a href="#">Lug Out</a></li> 
+        <li class="navvmenu"><a href="#">Inboxx</a></li> 
+        <li class="navvmenu"><a href="#">Mi crushes</a></li> 
+        <li class="dropdown"> 
+          <a href="javascript:void(0)" class="dropbtn">Planets</a>
+          <div class="dropdown-content">
+            <a href="#">earth</a>  
+            <a href="#">jupiter</a>
+            <a href="#">venus</a>  
+            <a href="#">mercury</a>  
+            <a href="#">mars</a>
+            <a href="#">neptune</a> 
+            <a href="#">uranus</a> 
+          </div>
+        </li> 
+      </ul>
+      <h5>your odyssey starts now</h5>
+    </nav>
+    
+    <%= yield %>
+
+    <footer>
+      <ul>
+        <li class="foot"><a href="#">contact</a></li> 
+        <li class="foot"><a href="#">service</a></li> 
+        <li class="foot"><a href="#">à propos</a></li> 
+
+    </footer>
+  </body>
+</html>
